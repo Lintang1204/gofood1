@@ -32,7 +32,7 @@ function change()
         		if($pilihan == "y" || $pilihan == "Y")
 			{
         			echo color("yellow","=======================================================\n");
-        			echo "\n".color("yellow","Claim voc GOFOODSANTAI19");
+        			echo "\n".color("yellow","Claim voc GOFOODSANTAI11");
         			echo "\n".color("yellow","Please wait");
         			for($a=1;$a<=3;$a++){
         			echo color("yellow",".");
