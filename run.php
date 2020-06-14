@@ -32,12 +32,12 @@ function change()
         		if($pilihan == "y" || $pilihan == "Y")
 			{
         			echo color("yellow","=======================================================\n");
-        			echo "\n".color("yellow","Claim voc 17MALFA");
+        			echo "\n".color("yellow","Claim voc COBAGOFOOD0906");
         			echo "\n".color("yellow","Please wait");
         			for($a=1;$a<=3;$a++){
         			echo color("yellow",".");
         			sleep(1);}
-        			$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"17MALFA"}');
+        			$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0906"}');
         			$message = fetch_value($code1,'"message":"','"');
         			if(strpos($code1, 'Promo kamu sudah bisa dipakai'))
 				{
@@ -47,13 +47,13 @@ function change()
 				else
 				{
         				echo "\n".color("red","Message : ".$message);
-        				echo "\n".color("yellow","Claim voc GOFOODSANTAI11");
+        				echo "\n".color("yellow","Claim voc COBAGOFOOD0906");
         				echo "\n".color("yellow","Please wait");
         				for($a=1;$a<=3;$a++){
         				echo color("yellow",".");
         				sleep(1);}
         				sleep(3);
-        				$santai11 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOODSANTAI11"}');
+        				$santai11 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0906"}');
         				$messagesantai11 = fetch_value($santai11,'"message":"','"');
         				if(strpos($santai11, 'Promo kamu sudah bisa dipakai.'))
 					{
@@ -63,13 +63,13 @@ function change()
 					else
 					{
         					echo "\n".color("red","Message : ".$messagesantai11);
-        					echo "\n".color("yellow","Claim voc GOFOODSANTAI08");
+        					echo "\n".color("yellow","Claim voc COBAGOFOOD0906");
        						echo "\n".color("yellow","Please wait");
         					for($a=1;$a<=3;$a++){
         					echo color("yellow",".");
         					sleep(1);}
         					sleep(3);
-        					$santai08 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOFOODSANTAI08"}');
+        					$santai08 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0906"}');
         					$messagesantai08 = fetch_value($santai08,'"message":"','"');
         					if(strpos($santai08, 'Promo kamu sudah bisa dipakai.'))
 						{
